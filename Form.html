@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name=" description" content=" hTML FOR BE">
+        <TITLE> Form part 1 label , text input , password input , checkbox, submit input</TITLE>
+        <link rel="stylesheet" href="sytlee.css">
+        <script> function SayHello()
+        { alert("Hello HTML");}
+        </script>
+
+        <style>
+            fieldset { background-color: rgb(232, 160, 52); padding: 10px; border: 1px solid rgb(247, 195, 206);}
+            legend {background-color: blueviolet;border: 1px solid;padding: 5px; margin-bottom: 20px;}
+
+        </style>
+    </head>
+    <body>
+        <form name="register" action="post.php" method="post">
+        <fieldset>
+            <legend> Personal Information</legend>
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Type Your Name" maxlength="10">
+
+            <br>
+            <label>password</label>
+            <input type="password" name="password">
+        
+            <br>
+            <label>Your Massage</label><br>
+            <textarea rows="6" cols="60"></textarea>
+            <br>
+            <label> Upload Your CV</label>
+            <input type="File">
+            <br>
+            <input type="checkbox">
+            <label>Remember Me</label>
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend> Your Favourite</legend>
+            <label> Choose Your browser</label>
+            <br>
+            <input type="radio" name="browser" value="Chrome"> Google Chrome <br>
+            <input type="radio" name="browser" value="FireFox"> Mozilla FireFox <br>
+            <input type="radio" name="browser" value="microsoftedge"> microsoftedge<br>
+            <label> Choose Your Mobile</label>
+            <br>
+            <input type="radio" name="Mobile" value="Samsung">Samsung <br>
+            <input type="radio" name="Mobile" value="iPhone"> iPhone <br>
+            <input type="radio" name="Mobile" value="Nokia"> Nokia
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend> Send Option</legend>
+            <select name="Time">
+            <optgroup label="Near Time">
+                <option value="1">Now</option>
+                <option value="2">Tomorrow</option>
+            </optgroup>
+            <optgroup label="Far Time">
+                <option value="3">After A Week</option>
+                <option value="4"> next month</option>
+            </optgroup>
+            </select>
+            <input type="button" name="Say Hello" value="Say Hello" onclick="SayHello()">
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Restore Default">
+            <input type="image" src="http://placehold.it/100/100" alt="Submit"> 
+            <input type="hidden" value="testing">
+        </fieldset>
+
+        </form>
+    </body>
+</html>
